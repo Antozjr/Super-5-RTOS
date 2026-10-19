@@ -30,7 +30,7 @@ Disponible |
 | 19 | Programador ST-Link V2 (clon) | Para Blue Pill + STM32F405 | 1 ud | 1 | ✅ En casa |
 
 
-## Sin comprar (proyecto archivado antes de completar el pedido)
+## Sin comprar (desarrollo detenido antes de completar el pedido)
 
 | \# | Componente | Referencia | Cant. | Fase | Notas |
 | - | - | - | - | - | - |

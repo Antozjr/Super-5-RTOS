@@ -4,18 +4,18 @@ Formato: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ---
 
-## [Archivado] — 23/09/2026
+## [Desarrollo detenido] — 23/09/2026
 
 El vehículo sufrió un incendio durante una marcha normal, antes de llegar a instalar el BCM. El
-desarrollo se detiene aquí. Reorganización final del repositorio para dejarlo archivado:
+desarrollo se detiene aquí. Reorganización final del repositorio para dejarlo ordenado:
 
 ### Changed
 - Flujo de colaboración actualizado: único colaborador Claude Code (antes Gemini CLI + Claude Code).
-  `AGENTS.md`, `README.md` y `CLAUDE.md` reflejan el estado archivado.
+  `AGENTS.md`, `README.md` y `CLAUDE.md` reflejan el desarrollo detenido.
 - `docs/PROPOSALS.md` y `docs/CHANGELOG.md` se conservan sin reescribir como registro histórico.
 - `Gateway/src/Config.h`: credenciales WiFi reales sustituidas por placeholders antes de publicar el repo.
 - `docs/PINOUT.md`, `docs/INSTALL.md`: referencias a la contraseña WiFi real eliminadas.
-- `docs/INSTALL.md`: Fases 2–4 marcadas como archivadas sin completar (en vez de "pendiente").
+- `docs/INSTALL.md`: Fases 2–4 marcadas como detenidas sin completar (en vez de "pendiente").
 
 ### Removed
 - `docs/INDICE_MANUAL.md` — índice de 1000+ líneas del manual de taller en papel, ya sin utilidad
@@ -23,7 +23,7 @@ desarrollo se detiene aquí. Reorganización final del repositorio para dejarlo 
 
 ---
 
-## [Unreleased] — Fase 2 (nunca continuada — ver [Archivado] arriba)
+## [Unreleased] — Fase 2 (nunca continuada — ver [Desarrollo detenido] arriba)
 
 ### Fixed (docs) — 01/08/2026
 - **Corregido el mapa del panel de relés Sec 87** en `docs/PINOUT.md` y `docs/BCM_HARDWARE.md`,
@@ -63,7 +63,7 @@ desarrollo se detiene aquí. Reorganización final del repositorio para dejarlo 
 - **4 agujeros M3** de fijación. Conectores de potencia con bornera de tornillo 5 mm; CAN/flames JST-XH; entradas de mando JST-XH 8p.
 - **Presupuesto PCBWay:** ~€39,84 / 5 uds + envío (Global Direct ~€6,29). Pendiente de pedido.
 
-### Nunca realizado (proyecto archivado antes de continuar)
+### Nunca realizado (desarrollo detenido antes de continuar)
 - Pedir el PCB a PCBWay
 - Recontar componentes vs BOM y comprar faltantes · decidir caja/alojamiento
 - Verificar físicamente qué zócalos del panel (pos. 6 y 9) están poblados en el coche real

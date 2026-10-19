@@ -5,8 +5,8 @@ El README.md refleja solo el estado actual aprobado. Este documento conserva el 
 
 **Formato de estado:** `Pendiente` | `Aprobada` | `Rechazada` | `Implementada`
 
-> **Nota (proyecto archivado):** las referencias `Gemini/...` y `Claude/...` de este documento apuntan a
-> directorios de trabajo de la fase de desarrollo activo que no forman parte de este repositorio archivado.
+> **Nota (desarrollo detenido):** las referencias `Gemini/...` y `Claude/...` de este documento apuntan a
+> directorios de trabajo de la fase de desarrollo activo que no forman parte de este repositorio.
 > Se conservan tal cual por fidelidad histórica.
 
 ---

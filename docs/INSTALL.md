@@ -1,6 +1,6 @@
 # Instalación y despliegue — Super5 RTOS v3
 
-> **Proyecto archivado.** El vehículo se perdió en un incendio antes de llegar a la Fase 3, así que
+> **Desarrollo detenido.** El vehículo se perdió en un incendio antes de llegar a la Fase 3, así que
 > las Fases 2–4 quedaron sin completar. Esta guía se conserva como referencia técnica (compilación,
 > wiring, troubleshooting) para quien quiera reutilizar el firmware o la arquitectura en otro vehículo.
 
@@ -68,7 +68,7 @@ El orden correcto es de menos a más riesgo. **Nunca saltar fases.**
 
 ### Fase 2 — Prototipo PCB del BCM
 
-**Estado:** 🔴 Archivada sin completar — PCB diseñado en KiCad (Gerbers listos), nunca fabricado
+**Estado:** 🔴 Detenida sin completar — PCB diseñado en KiCad (Gerbers listos), nunca fabricado
 
 **Objetivo:** construir el nodo BCM sobre PCB real, alimentado a 12V.
 
@@ -96,7 +96,7 @@ El orden correcto es de menos a más riesgo. **Nunca saltar fases.**
 
 ### Fase 3 — Interceptación en el vehículo
 
-**Estado:** 🔴 Archivada sin completar — el vehículo se perdió antes de llegar a esta fase
+**Estado:** 🔴 Detenida sin completar — el vehículo se perdió antes de llegar a esta fase
 
 **Objetivo:** instalar BCM físicamente en el coche e interceptar los circuitos del panel de relés.
 
@@ -121,7 +121,7 @@ El orden correcto es de menos a más riesgo. **Nunca saltar fases.**
 
 ### Fase 4 — Gateway + UCE
 
-**Estado:** 🔴 Archivada sin completar — UCE nunca llegó a compilar
+**Estado:** 🔴 Detenida sin completar — UCE nunca llegó a compilar
 
 **Gateway:**
 1. ✅ Driver MCP2515 completo implementado en `Gateway/src/CAN.cpp`.

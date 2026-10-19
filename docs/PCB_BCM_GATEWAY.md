@@ -126,8 +126,8 @@ Proyecto KiCad: `Archivos Placa/` · Gerbers: `Archivos Placa/gerbers/`.
 > MCP y el TJA se llevan con 2 hilos cortos cada uno a sus pads, evitando alinear la 2ª fila del módulo.
 
 ### Presupuesto (PCBWay, 02/08/2026)
-- 5 uds, 2 capas, 1,6 mm: **~€39,84** + envío. Envío recomendado **Global Direct ~€6,29** (6–10 días). Total ~€46. Nunca pedido — proyecto archivado antes de fabricar la placa.
+- 5 uds, 2 capas, 1,6 mm: **~€39,84** + envío. Envío recomendado **Global Direct ~€6,29** (6–10 días). Total ~€46. Nunca pedido — desarrollo detenido antes de fabricar la placa.
 
-### Sin completar (proyecto archivado)
+### Sin completar (desarrollo detenido)
 - **Revisión CAN (decidido 02/08/2026, nunca aplicada):** pasar CANH/CANL del **MCP2515 y TJA1050** de cableado a **enchufe completo** — ambos módulos sacan el CAN por pines (el MCP por header además de la bornera). Faltaba medir la separación de filas y el offset de los 2 pines de CAN, reposicionar `J_MCPCAN`/`J_TJACAN` como zócalos hembra y reenrutar esas pistas.
 - Pedido en PCBWay · recuento de componentes vs BOM · caja/alojamiento — ninguno llegó a hacerse.
