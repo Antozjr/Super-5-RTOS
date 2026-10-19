@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super5 GTL - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚗 Super5 GTL</h1>
+        <div id="connection-status" class="status-badge disconnected">Desconectado</div>
+    </header>
+
+    <main>
+        <!-- Gauges principales -->
+        <section class="gauges-grid">
+            <div class="gauge-card">
+                <div class="gauge-value" id="rpm">—</div>
+                <div class="gauge-label">RPM</div>
+                <div class="gauge-bar"><div class="gauge-fill" id="rpm-bar"></div></div>
+            </div>
+            <div class="gauge-card">
+                <div class="gauge-value" id="map">—</div>
+                <div class="gauge-label">MAP (kPa)</div>
+            </div>
+            <div class="gauge-card">
+                <div class="gauge-value" id="clt">—</div>
+                <div class="gauge-label">Refrigerante (°C)</div>
+            </div>
+            <div class="gauge-card">
+                <div class="gauge-value" id="iat">—</div>
+                <div class="gauge-label">Aire (°C)</div>
+            </div>
+            <div class="gauge-card">
+                <div class="gauge-value" id="batt">—</div>
+                <div class="gauge-label">Batería (V)</div>
+            </div>
+            <div class="gauge-card">
+                <div class="gauge-value" id="flame-status">—</div>
+                <div class="gauge-label">Flames</div>
+            </div>
+        </section>
+
+        <!-- Control Flames -->
+        <section class="control-panel">
+            <h2>Control Flames</h2>
+            <div class="control-row">
+                <label>Patrón:</label>
+                <select id="flame-pattern">
+                    <option value="0">Single burst</option>
+                    <option value="1">Double tap</option>
+                    <option value="2">Long burn</option>
+                    <option value="3">Stutter</option>
+                    <option value="4">Slow build</option>
+                    <option value="5">Machine gun</option>
+                    <option value="6">Fade out</option>
+                    <option value="7">Pop</option>
+                    <option value="8">Sequence</option>
+                    <option value="9">Rumble</option>
+                    <option value="10">Firework</option>
+                    <option value="11">Pulse</option>
+                    <option value="12">Rapid fire</option>
+                </select>
+                <label>Velocidad:</label>
+                <input type="range" id="flame-speed" min="50" max="255" value="180">
+                <span id="flame-speed-val">180</span>
+                <button id="btn-fire" class="btn-fire">🔥 DISPARAR</button>
+            </div>
+        </section>
+
+        <!-- Control Alarma -->
+        <section class="control-panel">
+            <h2>Alarma</h2>
+            <div class="control-row">
+                <button id="btn-arm" class="btn-action">Armar</button>
+                <button id="btn-disarm" class="btn-action btn-secondary">Desarmar</button>
+            </div>
+        </section>
+
+        <!-- Log -->
+        <section class="log-panel">
+            <h2>Log</h2>
+            <div id="log"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

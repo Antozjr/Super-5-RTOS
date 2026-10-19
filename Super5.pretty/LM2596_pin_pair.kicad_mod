@@ -1,0 +1,20 @@
+(footprint "LM2596_pin_pair"
+	(version 20240108)
+	(generator "hand")
+	(layer "F.Cu")
+	(descr "Par de pines para modulo LM2596 - paso 17.5mm, agujeros holgados 2.0mm para tolerancia")
+	(attr through_hole)
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(property "Value" "LM2596"
+		(at 0 20.5 0)
+		(layer "F.Fab")
+		(effects (font (size 1 1) (thickness 0.15)))
+	)
+	(fp_line (start -2 -2) (end -2 19.5) (stroke (width 0.12) (type solid)) (layer "F.SilkS"))
+	(pad "1" thru_hole rect (at 0 0) (size 3.4 3.4) (drill 2.0) (layers "*.Cu" "*.Mask"))
+	(pad "2" thru_hole circle (at 0 17.5) (size 3.4 3.4) (drill 2.0) (layers "*.Cu" "*.Mask"))
+)

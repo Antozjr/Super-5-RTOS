@@ -1,0 +1,202 @@
+/* style.css - Super5 GTL Dashboard */
+
+:root {
+    --bg: #0d0d0d;
+    --surface: #1a1a1a;
+    --border: #2a2a2a;
+    --accent: #ff4400;
+    --accent2: #ffaa00;
+    --text: #e0e0e0;
+    --text-muted: #888;
+    --green: #00cc66;
+    --red: #ff3333;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Courier New', monospace;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background: var(--surface);
+    border-bottom: 2px solid var(--accent);
+}
+
+header h1 { font-size: 1.4rem; color: var(--accent); letter-spacing: 2px; }
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.status-badge.connected    { background: var(--green); color: #000; }
+.status-badge.disconnected { background: var(--red);   color: #fff; }
+
+main { padding: 24px; display: flex; flex-direction: column; gap: 24px; }
+
+/* Gauges */
+.gauges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.gauge-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+.gauge-card:hover { border-color: var(--accent); }
+
+.gauge-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent2);
+    line-height: 1.2;
+}
+
+.gauge-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gauge-bar {
+    margin-top: 8px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.gauge-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+/* Panels de control */
+.control-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.control-panel h2 {
+    font-size: 0.9rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+}
+
+.control-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.control-row label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+select, input[type="range"] {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+
+select:focus { outline: none; border-color: var(--accent); }
+
+input[type="range"] { cursor: pointer; padding: 0; }
+
+.btn-fire {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.1s;
+}
+.btn-fire:hover  { background: #ff6622; }
+.btn-fire:active { background: #cc3300; transform: scale(0.97); }
+
+.btn-action {
+    background: var(--accent2);
+    color: #000;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.1s;
+}
+.btn-action:hover { opacity: 0.85; }
+.btn-secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+
+/* Log */
+.log-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.log-panel h2 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+#log {
+    height: 120px;
+    overflow-y: auto;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+#log .log-line { border-bottom: 1px solid var(--border); padding: 2px 0; }
+#log .log-ok   { color: var(--green); }
+#log .log-err  { color: var(--red); }
+
+/* Responsive */
+@media (max-width: 500px) {
+    .gauges-grid { grid-template-columns: repeat(2, 1fr); }
+    .gauge-value { font-size: 1.5rem; }
+    header h1    { font-size: 1.1rem; }
+}

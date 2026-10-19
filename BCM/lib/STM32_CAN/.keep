@@ -1,0 +1,11 @@
+# Placeholder - STM32_CAN Library
+#
+# Colocar aquí la librería STM32_CAN cuando esté disponible.
+# Estructura esperada:
+#   STM32_CAN/
+#     STM32_CAN.h
+#     STM32_CAN.cpp
+#
+# Alternativa: usar la librería oficial de PlatformIO:
+#   lib_deps = askuric/Simple FOC library @ ^2.3.0
+#              (o la que uses para CAN en STM32)

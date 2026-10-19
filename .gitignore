@@ -1,0 +1,23 @@
+# PlatformIO build artifacts y librerías descargadas
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Editores
+.vscode/
+*.swp
+
+# Manual de taller (excluido del repo por tamaño/derechos)
+manual-de-taller-oficial-renault-super-5-espaol-pdf_compress.pdf
+
+# KiCad
+*-backups/
+fp-info-cache
+*.kicad_pcb-bak
+*.kicad_sch-bak
+Archivos Placa/.history/
+
+# Notas internas de trabajo (solo locales)
+AGENTS.md
+CLAUDE.md
+.claude/
